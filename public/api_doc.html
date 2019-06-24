@@ -37,10 +37,10 @@
             <a class="nav-link text-white h6" href="/api_doc.html">API</a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link text-white h5" href="http://45.56.98.193/register">Sign Up</a>
+            <a class="nav-link text-white h5" href="http://www.oikik.io/register">Sign Up</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white h5" href="http://45.56.98.193/login">Log In</a>
+            <a class="nav-link text-white h5" href="http://www.oikik.io/login">Log In</a>
           </li>
         </ul>
       </div>
@@ -61,7 +61,7 @@ POST
 <br>
 </div>
 <pre class="p-3"><code>
-curl -u email@admin.com:password -i -X POST -H "Content-Type: application/json" -d '{"email":"abc@abc.com","password":"123456"}'  http://linktotheapp/api/add_user
+curl -u email@admin.com:password -i -X POST -H "Content-Type: application/json" -d '{"email":"abc@abc.com","password":"123456"}'  https://hq.oikik.io/api/add_user
 </code></pre>
 </div>
 </div> -->
@@ -79,13 +79,13 @@ GET/POST
 ADD:
 <br>
 <pre class="p-3"><code>
-curl -d '{"domain":"abc2.com","destination":"abc2.com","port":"25"}' -u email@admin.com:password -i -X POST -H "Content-Type: application/json"  http://linktotheapp/api/domain
+curl -d '{"domain":"abc2.com","destination":"abc2.com","port":"25"}' -u email@admin.com:password -i -X POST -H "Content-Type: application/json"  https://hq.oikik.io/api/domain
 </code></pre>
 <br>
 VIEW:
 <br>
 <pre class="p-3"><code>
-curl -u email@admin.com:password -i -X GET http://linktotheapp/api/domain
+curl -u email@admin.com:password -i -X GET  https://hq.oikik.io/api/domain
 </code></pre>
 </div>
 </div>
@@ -104,13 +104,13 @@ GET/POST
 ADD:
 <br>
 <pre class="p-3"><code>
-curl -d '{"address":"abc.com"}' -u ad1@admin.com:123456 -i -X POST -H "Content-Type: application/json"  http://linktotheapp/api/recipient
+curl -d '{"address":"abc.com"}' -u ad1@admin.com:123456 -i -X POST -H "Content-Type: application/json"   https://hq.oikik.io/api/recipient
 </code></pre>
 <br>
 VIEW:
 <br>
 <pre class="p-3"><code>
-curl -u email@admin.com:password -i -X GET http://linktotheapp/api/recipient
+curl -u email@admin.com:password -i -X GET  https://hq.oikik.io/api/recipient
 </code></pre>
 </div>
 </div>
@@ -131,13 +131,13 @@ GET/POST
 ADD:
 <br>
 <pre class="p-3"><code>
-curl -d '{"sender":"abc@abc.com","receiver":"qwe@mydomain.com"}' -u email@admin.com:password -i -X POST -H "Content-Type: application/json"  http://linktotheapp/api/whitelist
+curl -d '{"sender":"abc@abc.com","receiver":"qwe@mydomain.com"}' -u email@admin.com:password -i -X POST -H "Content-Type: application/json"   https://hq.oikik.io/api/whitelist
 </code></pre>
 <br>
 VIEW:
 <br>
 <pre class="p-3"><code>
-curl -u email@admin.com:password -i -X GET http://linktotheapp/api/whitelist
+curl -u email@admin.com:password -i -X GET  https://hq.oikik.io/api/whitelist
 </code></pre>
 
 </div>
@@ -160,21 +160,21 @@ DELETE
 Delete Domain:
 <br>
 <pre class="p-3"><code>
-curl -d '{"domain":"abc123@qqq.com"}' -u email@admin.com:password -i -X DELETE -H "Content-Type: application/json"  http://linktotheapp/api/delete/domain
+curl -d '{"domain":"abc123@qqq.com"}' -u email@admin.com:password -i -X DELETE -H "Content-Type: application/json"   https://hq.oikik.io/api/delete/domain
 </code></pre>
 <br>
 Delete Relay Recipient address:
 <br>
 
 <pre class="p-3"><code>
-curl -d '{"domain":"abc123@qqq.com"}' -u ad1@admin.com:123456 -i -X DELETE -H "Content-Type: application/json"  http://linktotheapp/api/delete/recipient
+curl -d '{"domain":"abc123@qqq.com"}' -u ad1@admin.com:123456 -i -X DELETE -H "Content-Type: application/json"   https://hq.oikik.io/api/delete/recipient
 </code></pre>
 <br>
 Delete Whitelist entry:
 <br>
 
 <pre class="p-3"><code>
-curl -d '{"sender":"abc123@example.com", "receiver":"zxc@mydomain.com"}' -u ad1@admin.com:123456 -i -X DELETE -H "Content-Type: application/json"  http://linktotheapp/api/delete/whitelist
+curl -d '{"sender":"abc123@example.com", "receiver":"zxc@mydomain.com"}' -u ad1@admin.com:123456 -i -X DELETE -H "Content-Type: application/json"   https://hq.oikik.io/api/delete/whitelist
 </code></pre>
 <br>
 </div>
