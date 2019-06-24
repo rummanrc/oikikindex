@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Contact Oikik</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/one-page-wonder.min.css" rel="stylesheet">
+  
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark pb-1" style="background-color: #000 ">
+    <div class="container">
+      <a class="navbar-brand h5" href="index.html">Oikik</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <!-- <li class="nav-item mr-2">
+            <a class="nav-link text-white h6" href="/api_doc.html">API</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link text-white h5" href="http://45.56.98.193/register">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white h5" href="http://45.56.98.193/login">Log In</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+    <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Contact Us</h5>
+            <p class="text-center">Fill up this form and we'll get back to you soon!</p>
+            <form class="form-signin" method="POST" action="https://formspree.io/vimmaniac@gmail.com">
+              <div class="form-label-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" name="name" placeholder="Name" required>
+                <!-- <div class="form-control"> {{ userform.email(placeholder="admin@domain.com") }} </div> -->
+              </div>
+
+              <div class="form-label-group">
+                <label for="email">Email address</label>
+                <input type="text" id="email" class="form-control" name="email" placeholder="email" required>
+                <!-- <div class="form-control"> {{ userform.email(placeholder="admin@domain.com") }} </div> -->
+              </div>
+
+              <div class="form-label-group">
+                <label for="mailpermonth">Mails per month</label>
+                <input type="number" id="mailpermonth" class="form-control" name="mailpermonth" placeholder="Mails per month..." required>
+                <!-- <div class="form-control"> {{ userform.email(placeholder="admin@domain.com") }} </div> -->
+              </div>
+
+              <div class="form-label-group">
+                <label for="message">Message</label>
+                <input type="textarea" id="message" class="form-control" name="message" placeholder="message" value=" ">
+                <!-- <div class="form-control"> {{ userform.email(placeholder="admin@domain.com") }} </div> -->
+              </div>
+
+              <button class="btn btn-lg btn-primary btn-block mt-4" type="submit" id="submit">Send!</button>
+              
+            </form>
+          </div>
+        </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
