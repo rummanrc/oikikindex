@@ -1,7 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+  <head>
 
-<head>
     <!-- Google Tag Manager -->
 
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -10,60 +10,85 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WTJSSCM');</script>
 <!-- End Google Tag Manager -->
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>API</title>
+    
+    <meta name="author" content="">    
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!--Google Font link-->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+ <!--Helium css-->
+ <script src="https://kit.fontawesome.com/7ef4be0c56.js"></script>
+        <link rel="stylesheet" href="/assets/css/animate.css">
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="/assets/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="/assets/css/jasny-bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <!--<link rel="stylesheet" href="/assets/css/owl.carousel.css">
+        <link rel="stylesheet" href="/assets/css/owl.theme.css"> 
+        <link rel="stylesheet" href="/assets/css/responsive.css">
+        <link rel="stylesheet" href="/assets/css/scrolling-nav.css">	 --> 
 
-  <title>API-oikik</title>
+	<!-- CSS loaded by the children page -->
+        
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/one-page-wonder.min.css" rel="stylesheet">
-  
-</head>
-
-<body>
-    <!-- Google Tag Manager (noscript) -->
+    <meta property="og:title" content="API">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    </head>
+  <body>
+<!-- Google Tag Manager (noscript) -->
 
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTJSSCM"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<div class="wrapper">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark pb-1" style="background-color: #000">
-    <div class="container">
-      <a class="navbar-brand h5" href="index.html">Oikik</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <!-- <li class="nav-item mr-2">
-            <a class="nav-link text-white h6" href="/api_doc.html">API</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link text-white h5" href="https://hq.oikik.io/register">Sign Up</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white h5" href="https://hq.oikik.io/login">Log In</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container">
+<nav class="navbar navbar-expand-lg navbar-light bg-black">
+              <div class="container">
+                <a class="navbar-brand" href="index.html">Oikik</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" aria-controls="navbarResponsive">
+	                <i class="fa fa-bars"></i>
+	              </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+                  <ul class="navbar-nav">
+                    <li class="nav-item" >
+                    <a class="nav-link"  style=" border-bottom-style: solid; border-top-style: solid; border-width: 2px;"  href="api_doc.html">API</a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link"  href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="contactus.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://hq.oikik.io/register">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://hq.oikik.io/login">Log In</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown link</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+            </nav> 
+<div class="container">
   	
 
-<div class="h1 p-3 mb-5">API Documentation</div>
+<div class="h1 p-3 my-5">API Documentation</div>
 <!-- <div class="card mb-2">
 <div class="card-header">
 Add New User [Only when authorized as superadmin]
@@ -79,274 +104,426 @@ curl -u email@admin.com:password -i -X POST -H "Content-Type: application/json" 
 </div>
 </div> -->
 
-<div class="h3 p-2">Adding or Viewing Domains</div>
+<h3 class="heading-title p-2">Adding or Viewing Domains</h3>
 
+<div class="card p-2 mb-2 shadow">
+<div class="card-header ">
+Methods: GET/POST
+</div>
+<!-- TABS BEGIN -->
+<div class="row">
+            <!-- tabs left -->
+            <!-- tabs right -->
+            <div class="col-md-12 col-sm-12">
+              <div id="round-tab">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs nav-bg" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#tab01" role="tab">ADD</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab02" role="tab">VIEW</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane animated fadeIn active" id="tab01" role="tabpanel">
+                  	
+                    
+						<p>You can add a new domain using the following command</p>
+						<div class="card p-2 bg-dark"><kbd class="bg-dark">
+							curl -d '{"domain":"abc2.com","destination":"abc2.com","port":"25"}' -u email@admin.com:password -i -X POST -H "Content-Type: application/json"  https://hq.oikik.io/api/domain
+						</kbd></div>
+
+						<div class="mt-3 mb-2 p2">Arguments:</div>
+						<table class="table table-bordered">
+							<thead>
+								<th>Flag</th>
+								<th>Argument</th>
+								<th>Note</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="3">-d</td>
+									<td>domain</td>
+									<td>The domain you want to add</td>
+								</tr>
+								<tr>
+									
+									<td>destination</td>
+									<td>The mailbox address where the mail will be relayed to</td>
+								</tr>
+								<tr>
+									<td>port</td>
+									<td>The destination server's TCP port</td>
+								</tr>
+								<tr>
+									<td>-u</td>
+									<td>email:password</td>
+									<td>The registered email and password for authentication</td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+                  </div>
+                  <div class="tab-pane" id="tab02" role="tabpanel">
+                    
+						
+						<p>You can add view the list of your current domains using the following command</p>
+						<div class="card p-2 bg-dark"><kbd class="bg-dark">curl -u email@admin.com:password -i -X GET  https://hq.oikik.io/api/domain
+						</kbd></div>
+						<div class="mt-3 mb-2 p2">Arguments:</div>
+						<table class="table table-bordered">
+							<thead>
+								<th>Flag</th>
+								<th>Argument</th>
+								<th>Note</th>
+							</thead>
+							<tbody>
+								
+								<tr>
+									<td>-u</td>
+									<td>email:password</td>
+									<td>The registered email and password for authentication</td>
+								</tr>
+							</tbody>
+						</table>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- END OF TAB -->
+</div>
+
+<h3 class=" p-2 mt-5 heading-title">Adding or Viewing Recipient Addresses</h3>
 <div class="card mb-2">
 <div class="card-header ">
 Methods: GET/POST
 </div>
 <div class="card-body">
-ADD:
-<br>
-<br>
-<p>You can add a new domain using the following command</p>
-<div class="card p-2 bg-dark"><kbd class="bg-dark">
-	curl -d '{"domain":"abc2.com","destination":"abc2.com","port":"25"}' -u email@admin.com:password -i -X POST -H "Content-Type: application/json"  https://hq.oikik.io/api/domain
-</kbd></div>
+	<!-- TABS BEGIN -->
+<div class="row">
+            
+            <div class="col-md-12 col-sm-12">
+              <div id="">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs nav-bg" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#tab03" role="tab">ADD</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab04" role="tab">VIEW</a>
+                  </li>
+                </ul>
 
-<div class="mt-3 mb-2 p2">Arguments:</div>
-<table class="table table-bordered">
-	<thead>
-		<th>Flag</th>
-		<th>Argument</th>
-		<th>Note</th>
-	</thead>
-	<tbody>
-		<tr>
-			<td rowspan="3">-d</td>
-			<td>domain</td>
-			<td>The domain you want to add</td>
-		</tr>
-		<tr>
-			
-			<td>destination</td>
-			<td>The mailbox address where the mail will be relayed to</td>
-		</tr>
-		<tr>
-			<td>port</td>
-			<td>The destination server's TCP port</td>
-		</tr>
-		<tr>
-			<td>-u</td>
-			<td>email:password</td>
-			<td>The registered email and password for authentication</td>
-		</tr>
-	</tbody>
-</table>
-<br>
-VIEW:
-<br>
-<br>
-<p>You can add view the list of your current domains using the following command</p>
-<div class="card p-2 bg-dark"><kbd class="bg-dark">curl -u email@admin.com:password -i -X GET  https://hq.oikik.io/api/domain
-</kbd></div>
-</div>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab03" role="tabpanel">                  
+						<p>You can add a new recipient address using the following command</p>
+						<div class="card p-2 bg-dark"> <kbd class="bg-dark">
+						curl -d '{"address":"abc.com"}' -u ad1@admin.com:123456 -i -X POST -H "Content-Type: application/json"   https://hq.oikik.io/api/recipient
+						</kbd> </div>
+						
+						<div class="mt-3 mb-2 p2">Arguments:</div>
+						<table class="table table-bordered">
+							<thead>
+								<th>Flag</th>
+								<th>Argument</th>
+								<th>Note</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>-d</td>
+									<td>address</td>
+									<td>The recipient address you want to add</td>
+								</tr>
+								<tr>
+									<td>-u</td>
+									<td>email:password</td>
+									<td>The registered email and password for authentication</td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+                  </div>
+                  <div class="tab-pane" id="tab04" role="tabpanel">
+                    
+						
+						<p>You can add view the list of your recipient addresses using the following command</p>
+						<div class="card p-2 bg-dark"><kbd class="bg-dark">
+						curl -u email@admin.com:password -i -X GET  https://hq.oikik.io/api/recipient
+						</kbd></div>
+						<div class="mt-3 mb-2 p2">Arguments:</div>
+						<table class="table table-bordered">
+							<thead>
+								<th>Flag</th>
+								<th>Argument</th>
+								<th>Note</th>
+							</thead>
+							<tbody>
+								
+								<tr>
+									<td>-u</td>
+									<td>email:password</td>
+									<td>The registered email and password for authentication</td>
+								</tr>
+							</tbody>
+						</table>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- END OF TAB -->
 </div>
 
-<div class="h3 p-2 mt-5">Adding or Viewing Recipient Addresses</div>
+<h3 class="heading-title p-2 mt-5">Adding or Viewing Whitelist</h3>
 <div class="card mb-2">
 <div class="card-header ">
 Methods: GET/POST
 </div>
 <div class="card-body">
-<div class=""> 
-ADD:
-<br>
-<br>
-<p>You can add a new recipient address using the following command</p>
-<div class="card p-2 bg-dark"><kbd class="bg-dark">
-curl -d '{"address":"abc.com"}' -u ad1@admin.com:123456 -i -X POST -H "Content-Type: application/json"   https://hq.oikik.io/api/recipient
-</kbd></div>
-</div>
-<div class="mt-3 mb-2 p2">Arguments:</div>
-<table class="table table-bordered">
-	<thead>
-		<th>Flag</th>
-		<th>Argument</th>
-		<th>Note</th>
-	</thead>
-	<tbody>
-		<tr>
-			<td>-d</td>
-			<td>address</td>
-			<td>The recipient address you want to add</td>
-		</tr>
-		<tr>
-			<td>-u</td>
-			<td>email:password</td>
-			<td>The registered email and password for authentication</td>
-		</tr>
-	</tbody>
-</table>
-<br>
-VIEW:
-<br>
-<br>
-<p>You can add view the list of your recipient addresses using the following command</p>
-<div class="card p-2 bg-dark"><kbd class="bg-dark">
-curl -u email@admin.com:password -i -X GET  https://hq.oikik.io/api/recipient
-</kbd></div>
-</div>
-</div>
+	<!-- TABS BEGIN -->
+<div class="row">
+            
+            <div class="col-md-12 col-sm-12">
+              <div id="">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs nav-bg" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#tab05" role="tab">ADD</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab06" role="tab">VIEW</a>
+                  </li>
+                </ul>
 
-<div class="h3 p-2 mt-5">Adding or Viewing Whitelist</div>
-<div class="card mb-2">
-<div class="card-header ">
-Methods: GET/POST
-</div>
-<div class="card-body">
-ADD:
-<br>
-<br>
-<p>You can add a new address to whitelist using the following command</p>
-<div class="card p-2 bg-dark"><kbd class="bg-dark">
-curl -d '{"sender":"abc@abc.com","receiver":"qwe@mydomain.com"}' -u email@admin.com:password -i -X POST -H "Content-Type: application/json"   https://hq.oikik.io/api/whitelist
-</kbd>
-</div>
-<div class="mt-3 mb-2 p2">Arguments:</div>
-<table class="table table-bordered">
-	<thead>
-		<th>Flag</th>
-		<th>Argument</th>
-		<th>Note</th>
-	</thead>
-	<tbody>
-		<tr>
-			<td rowspan="2">-d</td>
-			<td>sender</td>
-			<td>The email address of the sender</td>
-		</tr>
-		<tr>
-			
-			<td>receiver</td>
-			<td>the email address of the recipient (must be in your domain)</td>
-		</tr>
-		<tr>
-			<td>-u</td>
-			<td>email:password</td>
-			<td>The registered email and password for authentication</td>
-		</tr>
-	</tbody>
-</table>
-<br>
-VIEW:
-<br>
-<br>
-<p>You can add view the list of your whitelisted addresses using the following command</p>
-<div class="card p-2 bg-dark"><kbd class="bg-dark">
-curl -u email@admin.com:password -i -X GET  https://hq.oikik.io/api/whitelist
-</kbd></div>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab05" role="tabpanel">                  
+						<p>You can add a new address to whitelist using the following command</p>
+						<div class="card p-2 bg-dark"><kbd class="bg-dark">
+						curl -d '{"sender":"abc@abc.com","receiver":"qwe@mydomain.com"}' -u email@admin.com:password -i -X POST -H "Content-Type: application/json"   https://hq.oikik.io/api/whitelist
+						</kbd>
+						</div>
+						<div class="mt-3 mb-2 p2">Arguments:</div>
+						<table class="table table-bordered">
+							<thead>
+								<th>Flag</th>
+								<th>Argument</th>
+								<th>Note</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="2">-d</td>
+									<td>sender</td>
+									<td>The email address of the sender</td>
+								</tr>
+								<tr>
+									
+									<td>receiver</td>
+									<td>the email address of the recipient (must be in your domain)</td>
+								</tr>
+								<tr>
+									<td>-u</td>
+									<td>email:password</td>
+									<td>The registered email and password for authentication</td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+                  </div>
+                  <div class="tab-pane" id="tab06" role="tabpanel">
+						<p>You can add view the list of your whitelisted addresses using the following command</p>
+						<div class="card p-2 bg-dark"><kbd class="bg-dark">
+						curl -u email@admin.com:password -i -X GET  https://hq.oikik.io/api/whitelist
+						</kbd></div>
+						<div class="mt-3 mb-2 p2">Arguments:</div>
+						<table class="table table-bordered">
+							<thead>
+								<th>Flag</th>
+								<th>Argument</th>
+								<th>Note</th>
+							</thead>
+							<tbody>
+								
+								<tr>
+									<td>-u</td>
+									<td>email:password</td>
+									<td>The registered email and password for authentication</td>
+								</tr>
+							</tbody>
+						</table>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- END OF TAB -->
+
+
 
 </div>
 </div>
 
-<div class="h3 p-2 mt-5">Deleting  Domains, Recipient Addresses or Whitelisted Addresses</div>
+<h3 class="heading-title p-2 mt-5">Deleting  Domains, Recipient Addresses or Whitelisted Addresses</h3>
 <div class="card mb-2">
 <div class="card-header ">
 Method: DELETE
 </div>
 <div class="card-body">
-Delete Domain:
-<br>
-<br>
-<p>You can delete a domain using the following command</p>
-<div class="card p-2 bg-dark"><kbd class="bg-dark">
-curl -d '{"domain":"abc123@qqq.com"}' -u email@admin.com:password -i -X DELETE -H "Content-Type: application/json"   https://hq.oikik.io/api/delete/domain
-</kbd></div>
-<div class="mt-3 mb-2 p2">Arguments:</div>
-<table class="table table-bordered">
-	<thead>
-		<th>Flag</th>
-		<th>Argument</th>
-		<th>Note</th>
-	</thead>
-	<tbody>
-		<tr>
-			<td>-d</td>
-			<td>domain</td>
-			<td>The domain you want to delete</td>
-		</tr>
-		<tr>
-			<td>-u</td>
-			<td>email:password</td>
-			<td>The registered email and password for authentication</td>
-		</tr>
-	</tbody>
-</table>
-<br>
-Delete Relay Recipient address:
-<br>
-<br>
-<p>You can delete a recipient address using the following command</p>
-<div class="card p-2 bg-dark"><kbd class="bg-dark">
-curl -d '{"address":"abc123@qqq.com"}' -u ad1@admin.com:123456 -i -X DELETE -H "Content-Type: application/json"   https://hq.oikik.io/api/delete/recipient
-</kbd></div>
-<div class="mt-3 mb-2 p2">Arguments:</div>
-<table class="table table-bordered">
-	<thead>
-		<th>Flag</th>
-		<th>Argument</th>
-		<th>Note</th>
-	</thead>
-	<tbody>
-		<tr>
-			<td>-d</td>
-			<td>address</td>
-			<td>The recipient address you want to delete</td>
-		</tr>
-		<tr>
-			<td>-u</td>
-			<td>email:password</td>
-			<td>The registered email and password for authentication</td>
-		</tr>
-	</tbody>
-</table>
-<br>
-Delete Whitelist entry:
-<br>
-<br>
-<p>You can delete an address/domain from whitelist using the following command</p>
-<div class="card p-2 bg-dark"><kbd class="bg-dark">
-curl -d '{"sender":"abc123@example.com", "receiver":"zxc@mydomain.com"}' -u ad1@admin.com:123456 -i -X DELETE -H "Content-Type: application/json"   https://hq.oikik.io/api/delete/whitelist
-</kbd></div>
-<div class="mt-3 mb-2 p2">Arguments:</div>
-<table class="table table-bordered">
-	<thead>
-		<th>Flag</th>
-		<th>Argument</th>
-		<th>Note</th>
-	</thead>
-	<tbody>
-		<tr>
-			<td rowspan="2">-d</td>
-			<td>sender</td>
-			<td>The email address of the sender</td>
-		</tr>
-		<tr>
-			
-			<td>receiver</td>
-			<td>the email address of the recipient (must be in your domain)</td>
-		</tr>
-		<tr>
-			<td>-u</td>
-			<td>email:password</td>
-			<td>The registered email and password for authentication</td>
-		</tr>
-	</tbody>
-</table>
-<br>
+<!-- TABS BEGIN -->
+<div class="row">
+            
+            <div class="col-md-12 col-sm-12">
+              <div id="">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs nav-bg" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#tab07" role="tab">Delete Domain</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab08" role="tab">Delete Recipient Address</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab09" role="tab">Delete Whitelist Entry</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab07" role="tabpanel">                  
+						<p>You can delete a domain using the following command</p>
+						<div class="card p-2 bg-dark"><kbd class="bg-dark">
+						curl -d '{"domain":"abc123@qqq.com"}' -u email@admin.com:password -i -X DELETE -H "Content-Type: application/json"   https://hq.oikik.io/api/delete/domain
+						</kbd></div>
+						<div class="mt-3 mb-2 p2">Arguments:</div>
+						<table class="table table-bordered">
+							<thead>
+								<th>Flag</th>
+								<th>Argument</th>
+								<th>Note</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>-d</td>
+									<td>domain</td>
+									<td>The domain you want to delete</td>
+								</tr>
+								<tr>
+									<td>-u</td>
+									<td>email:password</td>
+									<td>The registered email and password for authentication</td>
+								</tr>
+							</tbody>
+						</table>
+                  </div>
+                  <div class="tab-pane" id="tab08" role="tabpanel">
+						<p>You can delete a recipient address using the following command</p>
+						<div class="card p-2 bg-dark"><kbd class="bg-dark">
+						curl -d '{"address":"abc123@qqq.com"}' -u ad1@admin.com:123456 -i -X DELETE -H "Content-Type: application/json"   https://hq.oikik.io/api/delete/recipient
+						</kbd></div>
+						<div class="mt-3 mb-2 p2">Arguments:</div>
+						<table class="table table-bordered">
+							<thead>
+								<th>Flag</th>
+								<th>Argument</th>
+								<th>Note</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>-d</td>
+									<td>address</td>
+									<td>The recipient address you want to delete</td>
+								</tr>
+								<tr>
+									<td>-u</td>
+									<td>email:password</td>
+									<td>The registered email and password for authentication</td>
+								</tr>
+							</tbody>
+						</table>
+                  </div>
+
+                  <div class="tab-pane" id="tab09" role="tabpanel">
+						<p>You can delete an address/domain from whitelist using the following command</p>
+						<div class="card p-2 bg-dark"><kbd class="bg-dark">
+						curl -d '{"sender":"abc123@example.com", "receiver":"zxc@mydomain.com"}' -u ad1@admin.com:123456 -i -X DELETE -H "Content-Type: application/json"   https://hq.oikik.io/api/delete/whitelist
+						</kbd></div>
+						<div class="mt-3 mb-2 p2">Arguments:</div>
+						<table class="table table-bordered">
+							<thead>
+								<th>Flag</th>
+								<th>Argument</th>
+								<th>Note</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="2">-d</td>
+									<td>sender</td>
+									<td>The email address of the sender</td>
+								</tr>
+								<tr>
+									
+									<td>receiver</td>
+									<td>the email address of the recipient (must be in your domain)</td>
+								</tr>
+								<tr>
+									<td>-u</td>
+									<td>email:password</td>
+									<td>The registered email and password for authentication</td>
+								</tr>
+							</tbody>
+						</table>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- END OF TAB -->
 </div>
 </div>
 
-  </div>
+ </div>
+</div>
 
-  <!-- Footer -->
-  <footer class="py-5 bg-black">
+<br />
+<footer class="default-footer text-center">
+        <div class="container">
+          <!-- <img class="mb-40 footer-logo" src="/assets/images/logo-2.png" alt=""> -->
+
     <div class="container">
       <div class="row">
-      <p class="text-left text-white small col-8">Copyright &copy; Concitus 2019</p> <a class="text-right text-white small col-2" href="contactus.html">&rarr; Contact Us</a>
+      <p class="text-left text-white col-8">Copyright &copy; Concitus 2019</p> <a class="text-right text-white col-2" href="contactus.html">Contact Us</a>
     </div>
     <div class="row">
-      <a class=" text-left text-white small col-8" href="privacy.html">Privacy Policy</a>
+      <a class=" text-left text-white col-8" href="privacy.html">Privacy Policy</a>
     </div>
     </div>
     <!-- /.container -->
-  </footer>
+        </div>
+      </footer>
+</div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="/assets/js/jquery.min.js"></script>
+        <script src="/assets/js/jquery.nav.js"></script>
+        <!-- <script src="/assets/js/owl.carousel.min.js"></script>
+        <script src="/assets/js/form-validator.min.js"></script>  -->  
+        <!-- <script src="/assets/js/contact-form-script.js"></script> -->
+        <script src="/assets/js/jasny-bootstrap.min.js"></script>
+        <script src="/assets/js/jquery.mixitup.js"></script>   
+        <script src="/assets/js/jquery.countTo.js"></script>
+        <script src="/assets/js/jquery.easing.min.js"></script>
+        <script src="/assets/js/main.js"></script>   
+        <!-- <script src="/assets/js/scrolling-nav.js"></script>
+        <script src="/assets/js/tether.min.js"></script> -->
+        <script src="/assets/js/bootstrap.min.js"></script>
 
 </body>
-
 </html>
