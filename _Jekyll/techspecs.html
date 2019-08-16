@@ -1,0 +1,140 @@
+---
+layout: default
+title: Tech Specs
+---
+<div class="container my-5">
+<div class="text-center p-3">
+<h2 class="heading-title">Secure, Speedy & Sturdy!</h2>
+<h4 class="sub-title">Oikik is built with the motto of keeping your inbox free of spam</h4>
+</div>
+<div class="features-wrap">
+              <div class="row">
+                <!-- Start featured -->
+                <div class="col-md-4 col-sm-6">
+                  <div class="featured-box featured-center">
+                    <div class="featured-icon">
+                      <i class="fa fa-cogs"></i>
+                    </div>
+                    <div class="featured-content">
+                      <h4>Multi-level Filtering</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End featured -->
+
+                <!-- Start featured -->
+                <div class="col-md-4 col-sm-6">
+                  <div class="featured-box featured-center">
+                    <div class="featured-icon">
+                      <i class="fa fa-cubes"></i>
+                    </div>
+                    <div class="featured-content">
+                      <h4>Extensive Feature Set</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End featured -->
+
+                <!-- Start featured -->
+                <div class="col-md-4 col-sm-6">
+                  <div class="featured-box featured-center">
+                    <div class="featured-icon">
+                      <i class="fa fa-diamond"></i>
+                    </div>
+                    <div class="featured-content">
+                      <h4>First-rate Security</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End featured -->
+              </div>
+</div>
+
+<section id="section-filtering">
+<div class="row">
+<div class="col-12 text-center">
+<br>
+<h3>Multi-stage filtering</h3>
+<h5>Messages pass through multiple services prior to showing up in your inbox or quarantine.</h5>
+</div>
+</div>
+<div class="row">
+<div class="col-12">
+<p>
+The overall Oikik system is divided into multiple stages that a message passes through prior to being
+delivered to your inbox. If a message successfully navigates every stage of filters, it gets placed into
+a delivery queue, and is sent along to your mail server immediately.
+</p>
+<p>
+Each stage of filters assigns a score to the incoming message, and based upon the user's filter
+sensitivity (set in the control panel at the individual or domain level), the cumulative score of the
+message determines the action that the system takes for that message.
+</p>
+<p>
+Messages get placed into one of three buckets: "definitely spam", messages that the system has
+identified as absolutely a spam message, "possibly spam", messages that the system thinks might be spam
+but isn't absolutely sure, and "clean", messages that the system thinks aren't spam.
+</p>
+</div>
+<div class="col-12 text-center">
+<p id="image-filterstages">&nbsp;</p>
+</div>
+</div>
+</section>
+
+<div class="">
+            <!-- tabs left -->
+            <!-- tabs right -->
+            <div class="">
+              <div id="row" >
+                <!-- Nav tabs -->
+                <div class="col-md-4" style="display: inline-flex;">
+                <ul class=" nav-bg" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#tab01" role="tab">Border Filtering</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab02" role="tab">Core Filtering</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab03" role="tab">Learning Subsystem</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab04" role="tab">Logging Subsystem</a>
+                  </li>
+                </ul>
+                </div>
+                <!-- Tab panes -->
+                <div class="tab-content col-md-6" style="display: inline-flex;">
+                  <div class="tab-pane animated fadeIn active" id="tab01" role="tabpanel">
+                  	
+                    
+						<p> The border servers accept messages and perform initial filtering, including reputation filters, DNSBL queries, SPF checking, and recipient validation.
+
+Messages from senders with extremely good reputations are able to bypass further filters and get immediately delivered, while messages from senders with extremely poor reputations get quarantined immediately. </p>
+						<br>
+                  </div>
+                  <div class="tab-pane animated fadeIn" id="tab02" role="tabpanel">
+                  		<p>The core filtering servers process the primary message queue, and apply bayesian machine learning, content filtering, URIBL queries, and more.
+
+After a message is processed in the core, we determine the next action for that message based upon the user's preferences. Clean messages move to the delivery system, while spam messages are added to the user's quarantine. </p>
+				 </div>
+
+				 <div class="tab-pane animated fadeIn" id="tab03" role="tabpanel">
+                  		<p> Every message that passes through the Oikik system gets added to a learning queue, which processes and adds to the bayesian network.
+
+Once the message is learned as either clean or spam, the contents of the message are discarded, so there is no record of any clean message content inside Oikik. </p>
+				 </div>
+				 <div class="tab-pane animated fadeIn" id="tab04" role="tabpanel">
+                  		<p>  Oikik captures a large amount of log data about a message, without saving the contents of the message, and you can see this log data on the dashboard.
+The visibility into your mail logs can help you debug issues with your own mail server and see exactly what happened to each message that came into Oikik.</p>
+				 </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+</div>
