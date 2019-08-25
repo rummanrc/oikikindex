@@ -4,60 +4,72 @@ title: Tech Specs
 ---
 <div class="container my-5">
 <div class="text-center p-3">
-<h2 class="heading-title">Secure, Speedy & Sturdy!</h2>
-<h4 class="sub-title">Oikik is built with the motto of keeping your inbox free of spam</h4>
+<h2 class="heading-title animated fadeInRight">Secure, Speedy & Sturdy!</h2>
+<h4 class="sub-title animated fadeInLeft">Oikik is built with the motto of keeping your inbox free of spam</h4>
 </div>
 <div class="features-wrap">
-              <div class="row">
-                <!-- Start featured -->
-                <div class="col-md-4 col-sm-6">
-                  <div class="featured-box featured-center">
-                    <div class="featured-icon">
-                      <i class="fa fa-cogs"></i>
-                    </div>
-                    <div class="featured-content">
-                      <h4>Multi-level Filtering</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- End featured -->
-
-                <!-- Start featured -->
-                <div class="col-md-4 col-sm-6">
-                  <div class="featured-box featured-center">
-                    <div class="featured-icon">
-                      <i class="fa fa-cubes"></i>
-                    </div>
-                    <div class="featured-content">
-                      <h4>Extensive Feature Set</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- End featured -->
-
-                <!-- Start featured -->
-                <div class="col-md-4 col-sm-6">
-                  <div class="featured-box featured-center">
-                    <div class="featured-icon">
-                      <i class="fa fa-diamond"></i>
-                    </div>
-                    <div class="featured-content">
-                      <h4>First-rate Security</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- End featured -->
-              </div>
+          <div class="row animated fadeInUp">
+          <div class="col-sm-6 col-md-4">
+            <div class="about block text-center">
+              <img src="{{ BASE_PATH }}/assets/img/service/img4.png" alt="">
+              <h5><a href="#">Extensive Feature Set</a></h5>
+              <p>Prepare to be amazed by our features!</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="about block text-center">
+              <img src="{{ BASE_PATH }}/assets/img/service/layers.png" alt="">
+              <h5><a href="#">Multi Level Filtering</a></h5>
+              <p>For the best possible spam classification</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="about block text-center">
+              <img src="{{ BASE_PATH }}/assets/img/service/responsive.png" alt="">
+              <h5><a href="#">First Rate Security</a></h5>
+              <p>You can rest assured that your email is secure</p>
+            </div>
+          </div>
+        </div>
 </div>
 
-<section id="section-filtering">
+<section id="section-features" class="">
 <div class="row">
 <div class="col-12 text-center">
 <br>
-<h3>Multi-stage filtering</h3>
+<div class="">
+<div class=""><img src="{{ BASE_PATH }}/assets/img/service/img4.png" alt="" style="max-width: 100px; height: auto;"></div> <div class=""> <h3>Extensive Feature Set</h3> </div>
+</div>
+<h5>The features that will convince you to stay with Oikik</h5>
+</div>
+</div>
+<div class="">
+<div class="row py-3 ">
+  <div class="col-md-4"><img class="img-fluid rounded-circle" src="{{ BASE_PATH }}/assets/img/f1.png" style="max-width: 200px; height: auto;"></div> <div class="col-md-8 mt-5"> <h3>Whitelist</h3><br><h6>Whitelisting system for trusted addressses, so mail from your trusted contacts will never get marked as spam. </h6> </div>
+</div>
+
+<div class="row py-3">
+   <div class="col-md-8 mt-5"> <h3>Unlimited Mailboxes</h3><br><h6>No limit on the number of mailboxes. We don't charge by the number of recipient addresses you add.  </h6> </div> <div class="col-md-4"><img class="img-fluid rounded-circle float-right" src="{{ BASE_PATH }}/assets/img/f2.png" style="max-width: 200px; height: auto;"></div>
+</div>
+
+<div class="row py-3">
+  <div class="col-md-4"><img class="img-fluid rounded-circle" src="{{ BASE_PATH }}/assets/img/f5.png" style="max-width: 200px; height: auto;"></div> <div class="col-md-8 mt-5"> <h3>Web App</h3><br><h6>Use the Oikik web app to Manage your domains and whitelists while also keeping an eye on the mail logs. </h6> </div>
+</div>
+
+<div class="row py-3">
+   <div class="col-md-8 mt-5"> <h3>Multiple Mail Exchange servers</h3><br><h6>We provide multiple MXs to ensure that you never miss any email. </h6> </div> <div class="col-md-4"><img class="img-fluid rounded-circle float-right" src="{{ BASE_PATH }}/assets/img/f6.png" style="max-width: 200px; height: auto;"></div>
+</div>
+
+</div>
+</section>
+
+<section id="section-filtering" class="my-5 py-5">
+<div class="row">
+<div class="col-12 text-center">
+<br>
+<div class="">
+<div class=""><img src="{{ BASE_PATH }}/assets/img/service/layers.png" alt="" style="max-width: 100px; height: auto;"></div> <div class=""> <h3>Multi Level filtering</h3> </div>
+</div>
 <h5>Messages pass through multiple services prior to showing up in your inbox or quarantine.</h5>
 </div>
 </div>
@@ -83,7 +95,6 @@ but isn't absolutely sure, and "clean", messages that the system thinks aren't s
 <p id="image-filterstages">&nbsp;</p>
 </div>
 </div>
-</section>
 
 <div class="">
             <!-- tabs left -->
@@ -110,31 +121,55 @@ but isn't absolutely sure, and "clean", messages that the system thinks aren't s
                 <!-- Tab panes -->
                 <div class="tab-content col-md-6" style="display: inline-flex;">
                   <div class="tab-pane animated fadeIn active" id="tab01" role="tabpanel">
-                  	
                     
-						<p> The border servers accept messages and perform initial filtering, including reputation filters, DNSBL queries, SPF checking, and recipient validation.
+                    
+            <p> The border servers accept messages and perform initial filtering, including reputation filters, DNSBL queries, SPF checking, and recipient validation.
 
 Messages from senders with extremely good reputations are able to bypass further filters and get immediately delivered, while messages from senders with extremely poor reputations get quarantined immediately. </p>
-						<br>
+            <br>
                   </div>
                   <div class="tab-pane animated fadeIn" id="tab02" role="tabpanel">
-                  		<p>The core filtering servers process the primary message queue, and apply bayesian machine learning, content filtering, URIBL queries, and more.
+                      <p>The core filtering servers process the primary message queue, and apply bayesian machine learning, content filtering, URIBL queries, and more.
 
 After a message is processed in the core, we determine the next action for that message based upon the user's preferences. Clean messages move to the delivery system, while spam messages are added to the user's quarantine. </p>
-				 </div>
+         </div>
 
-				 <div class="tab-pane animated fadeIn" id="tab03" role="tabpanel">
-                  		<p> Every message that passes through the Oikik system gets added to a learning queue, which processes and adds to the bayesian network.
+         <div class="tab-pane animated fadeIn" id="tab03" role="tabpanel">
+                      <p> Every message that passes through the Oikik system gets added to a learning queue, which processes and adds to the bayesian network.
 
 Once the message is learned as either clean or spam, the contents of the message are discarded, so there is no record of any clean message content inside Oikik. </p>
-				 </div>
-				 <div class="tab-pane animated fadeIn" id="tab04" role="tabpanel">
-                  		<p>  Oikik captures a large amount of log data about a message, without saving the contents of the message, and you can see this log data on the dashboard.
+         </div>
+         <div class="tab-pane animated fadeIn" id="tab04" role="tabpanel">
+                      <p>  Oikik captures a large amount of log data about a message, without saving the contents of the message, and you can see this log data on the dashboard.
 The visibility into your mail logs can help you debug issues with your own mail server and see exactly what happened to each message that came into Oikik.</p>
-				 </div>
+         </div>
                 </div>
 
               </div>
             </div>
           </div>
+</section>
+
+
+<section id="section-filtering" class="my-5 py-5">
+<div class="row">
+<div class="col-12 text-center">
+<br>
+<div class="">
+<div class=""><img src="{{ BASE_PATH }}/assets/img/service/responsive.png" alt="" style="max-width: 100px; height: auto;"></div> <div class=""> <h3>First Rate Security</h3> </div>
+</div>
+<h5>Oikik ensures a safe passage for the transportation of your email.</h5>
+<p>
+  
+
+Oikik provides opportunistic TLS encryption for all incoming and delivered messages, and only allows TLS/SSL access to the client dashboard. We don't keep any copies of clean messages that have been delivered to your domain. When you use Oikik, you can rest assured that your email is secure.
+
+</p>
+</div>
+</div>
+<div class="row">
+
+</div>
+</section>
+
 </div>
