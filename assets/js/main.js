@@ -1,4 +1,4 @@
-    
+    /*
     $('#single-testimonial-item').owlCarousel({     
         items : 1,
         navigation : true,
@@ -50,3 +50,4 @@
       });   
       $('#image-slider').find('.owl-prev').html('<i class="fa fa-angle-left"></i>');
       $('#image-slider').find('.owl-next').html('<i class="fa fa-angle-right"></i>');
+*/
