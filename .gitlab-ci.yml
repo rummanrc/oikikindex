@@ -8,6 +8,7 @@ variables:
 test:
   stage: test
   script:
+  - bundle update
   - bundle exec jekyll build -d test
   artifacts:
     paths:
@@ -18,6 +19,7 @@ test:
 pages:
   stage: deploy
   script:
+  - bundle update
   - bundle exec jekyll build -d public
   artifacts:
     paths:
