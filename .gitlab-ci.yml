@@ -1,10 +1,12 @@
-image: ruby:2.3
+image: ruby:2.6
 
 variables:
   JEKYLL_ENV: production
   LC_ALL: C.UTF-8
 
 before_script:
+  - gem update --system
+  - gem install bundler
   - bundle install
 
 test:
