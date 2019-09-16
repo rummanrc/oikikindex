@@ -6,9 +6,11 @@ title: Pricing
 <div class="text-center p-3">
 <h2 class="heading-title">Pricing</h2>
 <h4 class="sub-title">Choose from our wide range of pricing schemes</h4>
+<div class="text-center pb-4"><button class="btn btn-default-filled btn-primary btn-lg m-3" id="volb" onclick="volbfunc()">Volume Based</button> <button class="btn btn-info btn-lg m-3" id="boxb" onclick="boxbfunc()">Mailbox Based</button></div>
 </div>
-<div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12">
+
+<div class="row" id="priceholdervol">
+          <div class="col-md-3">
             <div class="pricing-table-block">
               <div class="plan-name" style="background: green;">
                 <h3>Free</h3>
@@ -32,7 +34,7 @@ title: Pricing
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-md-3">
             <div class="pricing-table-block">
               <div class="plan-name">
                 <h3>Starter</h3>
@@ -54,7 +56,7 @@ title: Pricing
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-md-3">
             <div class="pricing-table-block">
               <div class="plan-name" style="background: #0D47A1">
                 <h3>Standard</h3>
@@ -76,7 +78,7 @@ title: Pricing
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-md-3">
             <div class="pricing-table-block">
               <div class="plan-name" style="background: #333;">
                 <h3>Enterprise</h3>
@@ -98,7 +100,109 @@ title: Pricing
             </div>
           </div>
 </div>
+
+<div class="row" id="priceholderbox" style="display: none;">
+          <div class="col-md-3">
+            <div class="pricing-table-block">
+              <div class="plan-name" style="background: green;">
+                <h3>Basic</h3>
+              </div>
+              <div class="plan-price">
+                <div class="price-value">$3.00</div>
+                <div class="interval">per mailbox</div>
+              </div>
+              <div class="plan-list">
+                <ul>
+                  <li><i class="fa fa-check"></i>Upto 10 Mailboxes</li>
+                  <li><i class="fa fa-check"></i>Unlimited Mails</li>
+                  <li><i class="fa fa-check"></i>Email Support</li>
+                  <!-- <li><i class="fa fa-check"></i>Unlimited Data</li>
+                  <li><i class="fa fa-check"></i>Fully Security Suite</li> -->
+                </ul>
+              </div>
+              <div class="plan-signup">
+                <a href="https://hq.oikik.io/register" class="btn btn-common">Sign Up</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="pricing-table-block">
+              <div class="plan-name">
+                <h3>Starter</h3>
+              </div>
+              <div class="plan-price">
+                <div class="price-value">$ 2.50 </div>
+                <div class="interval">per mailbox</div>
+              </div>
+              <div class="plan-list">
+                <ul>
+                  <li><i class="fa fa-check"></i>Upto 20 mailboxes</li>
+                  <li><i class="fa fa-check"></i>Unlimited Mails</li>
+                  <li><i class="fa fa-check"></i>Email Support</li>
+                </ul>
+              </div>
+              <div class="plan-signup">
+                <a href="https://hq.oikik.io/register" class="btn btn-common">Get started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="pricing-table-block">
+              <div class="plan-name" style="background: #0D47A1">
+                <h3>Standard</h3>
+              </div>
+              <div class="plan-price">
+                <div class="price-value">$ 2.00 </div>
+                <div class="interval">per mailbox</div>
+              </div>
+              <div class="plan-list">
+                <ul>
+                  <li><i class="fa fa-check"></i>Upto 35 mailboxes</li>
+                  <li><i class="fa fa-check"></i>Unlimited Mails</li>
+                  <li><i class="fa fa-check"></i>Email Support</li>
+                </ul>
+              </div>
+              <div class="plan-signup">
+                <a href="https://hq.oikik.io/register" class="btn btn-common">Get started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="pricing-table-block">
+              <div class="plan-name" style="background: #333;">
+                <h3>Enterprise</h3>
+              </div>
+              <div class="plan-price">
+                <div class="price-value"> Custom </div>
+                <div class="interval">Contact Us for Pricing</div>
+              </div>
+              <div class="plan-list">
+                <ul>
+                  <li><i class="fa fa-check"></i>Infinite mails per month</li>
+                  <li><i class="fa fa-check"></i>Unlimited Mailboxes</li>
+                  <li><i class="fa fa-check"></i>Phone & Email Support</li>
+                </ul>
+              </div>
+              <div class="plan-signup">
+                <a href="https://www.oikik.io/contactus" class="btn btn-common">Contact Us</a>
+              </div>
+            </div>
+          </div>
 </div>
+
+</div>
+
+
+
+
+
+
+
+
+
 
 <div class="container">
 
@@ -151,44 +255,33 @@ title: Pricing
                 </div>
                 <!-- End featured -->
               </div>
-
-              <!-- <div class="row">
-                
-                <div class="col-md-4 col-sm-6">
-                  <div class="featured-box">
-                    <div class="featured-icon">
-                      <i class="fa fa-cubes"></i>
-                    </div>
-                    <div class="featured-content">
-                      <h4>100+ Components</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="col-md-4 col-sm-6">
-                  <div class="featured-box">
-                    <div class="featured-icon">
-                      <i class="fa fa-diamond"></i>
-                    </div>
-                    <div class="featured-content">
-                      <h4>Clean Design</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                  <div class="featured-box">
-                    <div class="featured-icon">
-                      <i class="fa fa-cogs"></i>
-                    </div>
-                    <div class="featured-content">
-                      <h4>Easy to Customize</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
             </div>
 </div>
+
+
+<script>
+function volbfunc() {
+  var element, otherbutton, name, arr;
+  element = document.getElementById("volb");
+  otherbutton = document.getElementById("boxb");
+  element.className="btn btn-lg btn-default-filled btn-primary m-3";
+  otherbutton.className="btn btn-lg btn-info m-3";
+  //element.classList.add("mystyle");
+  document.getElementById("priceholderbox").style.display = "none";
+  document.getElementById("priceholdervol").style.display = "flex";
+}
+
+
+
+function boxbfunc() {
+  var element, otherbutton, name, arr;
+  element = document.getElementById("boxb");
+  otherbutton = document.getElementById("volb");
+  element.className="btn btn-lg btn-primary btn-default-filled m-3";
+  otherbutton.className="btn btn-lg btn-info m-3";
+  
+  document.getElementById("priceholdervol").style.display = "none";
+  document.getElementById("priceholderbox").style.display = "flex";
+  
+}
+</script>
