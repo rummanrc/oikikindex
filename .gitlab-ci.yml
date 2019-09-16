@@ -1,13 +1,9 @@
-image: ruby:2.6
+image: jekyll/builder
 
 variables:
   JEKYLL_ENV: production
   LC_ALL: C.UTF-8
 
-before_script:
-  - gem update --system
-  - gem install bundler
-  - bundle install
 
 test:
   stage: test
