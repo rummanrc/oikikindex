@@ -7,9 +7,9 @@
 
 #headers .header-caption{text-align:center;height:auto;text-shadow:none !important;top:0;bottom:0;padding:0}
 #headers .header-content{padding:90px}.header-title .text-primary{color:#0288D1 !important}
-.header-content header-title span{margin-bottom:15px}.header-content{margin-top:150px; margin-bottom:150px; font-size:14px;line-height:30px}
+.header-content header-title span{margin-bottom:15px}.header-content{margin-top:80px; margin-bottom:80px; font-size:14px;line-height:30px}
 .header-text{margin-top:15px;font-size:14px;line-height:30px}
-.header-content .btn{margin:15px}#header-style-1{background-image:url(/assets/img/bg/bg3.jpg);-webkit-background-size:cover;-moz-background-size:cover;background-size:auto;background-position:contain}
+.header-content .btn{margin:15px}#header-style-1{background-image:url(/assets/img/bg/bg6.jpg);-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;background-position:contain}
 #header-style-1 .header-title{color:#fff}#header-style-1 .header-text{color:#fff;line-height:1.5}
 #header-style-1 .content{min-height:555px;height:auto}
 #header-style-1 p.caption{padding:6px;color:#444}
