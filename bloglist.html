@@ -1,0 +1,19 @@
+---
+layout: default
+title: List of Blogs
+---
+
+<div class="container m-5 p-5">
+
+  {% for blog in site.blogs %}
+  <ul class="list-group">
+    <li class="list-group-item">
+    <a href="{{ blog.url }}" class="h4">
+      {{ forloop.index}}. {{ blog.name }} - {{ blog.title }}
+    </a>
+  </li>
+  </ul>
+  <!-- <p>{{ blog.content | markdownify }}</p> -->
+{% endfor %}
+  
+</div>

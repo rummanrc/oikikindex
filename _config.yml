@@ -31,6 +31,17 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+collections:
+  blogs:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "blogs"
+    values:
+      layout: "blog"
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
