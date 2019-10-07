@@ -3,13 +3,13 @@ layout: default
 title: List of Blogs
 ---
 
-<div class="container m-5 p-5">
+<div class="container my-3 py-3">
 
   {% for blog in site.blogs %}
   <ul class="list-group">
     <li class="list-group-item">
-    <a href="{{ blog.url }}" class="h4">
-      {{ forloop.index}}. {{ blog.name }} - {{ blog.title }}
+    <a href="{{ blog.url }}" class="h5">
+      {{ forloop.index}}. {{ blog.name }}
     </a>
   </li>
   </ul>
