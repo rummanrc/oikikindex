@@ -82,4 +82,4 @@ Typically, a hosted spam filtering service integrates with business directories 
 From the web-based portal, administrators can whitelist approved senders, apply “acceptable spam thresholds”, monitor real-time activity on the mail server, and schedule activity and quarantine reports. Administrators can also connect with their service providers via the web-based portal so a secure channel can be created for troubleshooting any issues with the hosted spam filtering service.
 </div>
 
-</div> 
+</div>
