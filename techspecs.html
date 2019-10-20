@@ -59,6 +59,7 @@ title: Tech Specs
 <br>
 <div class=" py-3">
    <div class="float-left"><img class="img-fluid rounded-circle mr-5" src="{{ BASE_PATH }}/assets/img/f6.png" style="max-width: 180px; height: auto;"></div> <div class=" mt-5"> <h3>Multiple Mail Exchange servers</h3><br><h6>We provide multiple mail exchange servers with 99% uptime to ensure that you never miss any email. </h6> </div> 
+
 </div>
 
 </div>
@@ -71,25 +72,23 @@ title: Tech Specs
 <div class="">
 <div class=""><img src="{{ BASE_PATH }}/assets/img/service/layers.png" alt="" style="max-width: 100px; height: auto;"></div> <div class=""> <h3>Multi Level filtering</h3> </div>
 </div>
-<h5>Messages pass through multiple services prior to showing up in your inbox or quarantine.</h5>
+<h5>Incoming emails pass through multiple layers prior to showing up in your inbox or spam quarantine.</h5>
 </div>
 </div>
 <div class="row">
 <div class="col-12">
 <p>
-The overall Oikik system is divided into multiple stages that a message passes through prior to being
-delivered to your inbox. If a message successfully navigates every stage of filters, it gets placed into
+The oikik hosted antispam system is divided into multiple filtering layer that a message passes through prior to being
+delivered to your inbox. If a message successfully passes through every stage of filters, it gets placed into
 a delivery queue, and is sent along to your mail server immediately.
 </p>
 <p>
-Each stage of filters assigns a score to the incoming message, and based upon the user's filter
+Each filter stage assigns a score to the incoming message, and based upon the user's filter
 sensitivity (set in the control panel at the individual or domain level), the cumulative score of the
 message determines the action that the system takes for that message.
 </p>
 <p>
-Messages get placed into one of three buckets: "definitely spam", messages that the system has
-identified as absolutely a spam message, "possibly spam", messages that the system thinks might be spam
-but isn't absolutely sure, and "clean", messages that the system thinks aren't spam.
+After the total score is calculated, emails are placed into three possible categories : 'clean email' - emails which are clean of malware and spam, 'possible spam' - emails which are clean of malware but still might be spammy, 'definitely spam' - blatant malicious spam. 
 </p>
 </div>
 <div class="col-12 text-center">
@@ -106,7 +105,7 @@ but isn't absolutely sure, and "clean", messages that the system thinks aren't s
                 <div class="col-md-4" style="display: inline-flex;">
                 <ul class=" nav-bg" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#tab01" role="tab">Border Filtering</a>
+                    <a class="nav-link active" data-toggle="tab" href="#tab01" role="tab">Edge Firewall</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#tab02" role="tab">Core Filtering</a>
@@ -124,9 +123,9 @@ but isn't absolutely sure, and "clean", messages that the system thinks aren't s
                   <div class="tab-pane animated fadeIn active" id="tab01" role="tabpanel">
                     
                     
-            <p> The border servers accept messages and perform initial filtering, including reputation filters, DNSBL queries, SPF checking, and recipient validation.
-
-Messages from senders with extremely good reputations are able to bypass further filters and get immediately delivered, while messages from senders with extremely poor reputations get quarantined immediately. </p>
+            <p> The edge firewall servers accept emails and performs initial validation, reputation check, SPF and DKIM validation, blacklist check and recipient validation.
+Messages from senders with good reputation are accepted immediately and placed into delivery queue but messages from senders with  very poor reputation are either rejected or tagged as possible spam.
+ </p>
             <br>
                   </div>
                   <div class="tab-pane animated fadeIn" id="tab02" role="tabpanel">
